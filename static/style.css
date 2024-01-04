@@ -1,0 +1,37 @@
+@import url("/styles/header.css");
+@import url("/styles/footer.css");
+:root {
+    --background-color: rgb(31,29,29);
+    --text-color: rgb(230,222,222);
+}
+@font-face {
+    font-family: 'Rethink Sans';
+    src: url('/rethink.ttf');
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Rethink Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+    /* footer stuff */
+    min-height: 101vh;
+}
+
+main {
+    margin: 0 24vw;
+}
+
+a {
+    transition: all .25s;
+    text-underline-offset: 5px;
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 640px) {
+    main {
+        margin: 0 5vw;
+    }
+}
