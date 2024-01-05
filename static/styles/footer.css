@@ -3,7 +3,7 @@ footer {
     flex-direction: column;
     margin: 0 24vw;
     position: sticky;
-    top: 100vh;
+    top: 101vh;
 }
 
 .hugo-link:hover {

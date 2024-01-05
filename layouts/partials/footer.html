@@ -1,3 +1,3 @@
 <footer>
-    <p>Copyright {{ .Date.Format "2006" }} stilk.tf owner. Made with <a href="https://gohugo.io" class="hugo-link">Hugo</a>.<br>Unless noted otherwise, all content on this site is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.</p>
+    <p>{{ i18n "footer-copyright" . | safeHTML }}<br>{{ i18n "footer-license" . | safeHTML }}</p>
 </footer>

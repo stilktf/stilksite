@@ -13,9 +13,12 @@ Index - {{.Site.Title}}
       <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
       {{ .Content }}
     </div>
+    <br>
     <div>
-      {{ range first 10 .Site.RegularPages }}
-        {{ .Render "summary" }}
+      {{ range first 10 (where .Site.Pages "Section" "posts") }}
+        {{ range .Pages}}
+          {{ partial "blogpost.html" .}}
+        {{ end }}
       {{ end }}
     </div>
   </main>

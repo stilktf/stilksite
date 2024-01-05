@@ -1,3 +1,22 @@
 baseURL = 'https://stilk.tf'
-languageCode = 'en-us'
+languageCode = 'en'
+defualtContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
+pluralizeListTitles = false
 title = "Stilk's website"
+
+[languages]
+    [languages.en]
+        disabled = false
+        contentDir = 'content/en'
+        languageCode = 'en'
+        languageName = "English"
+        flag = "🇬🇧"
+        title = "Stilk's website"
+    [languages.no]
+        disabled = false
+        contentDir = 'content/no'
+        languageCode = 'no'
+        languageName = "Norsk"
+        flag = "🇳🇴"
+        title = 'Stilks nettside'

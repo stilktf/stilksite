@@ -1,0 +1,21 @@
+.blog-post {
+    display: block;
+    background-color: var(--secondary-background-color);
+    padding: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.blog-post > h3 {
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+
+.blog-post-metadata {
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+.blog-post:hover {
+    background-color: var(--tertiary-background-color);
+}

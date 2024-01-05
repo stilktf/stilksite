@@ -1,6 +1,16 @@
 <header>
-    <h1><a href="/">{{.Site.Title}}</a></h1>
+    {{ $home := .Site.GetPage "/"}}
+    {{ $posts := .Site.GetPage "/posts"}}
+    <h1><a href="{{ $home.Permalink}}">{{.Site.Title}}</a></h1>
     <nav>
-        <a href="/posts">Posts</a>
+        <a href="{{ $posts.Permalink }}">{{ i18n "posts" }}</a>
+        <div class="language-switcher">
+            <a href="javascript:void(0)" class="language-switcher-text">🌍</a>
+            <div class="language-switcher-content">
+                {{ range $.Site.Home.AllTranslations }}
+                    <a href="{{ .RelPermalink }}">{{ .Language.Params.flag }} {{ .Language.LanguageName }}</a>
+                {{ end }}
+            </div>
+        </select>
     </nav>
 </header>

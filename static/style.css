@@ -1,12 +1,23 @@
 @import url("/styles/header.css");
 @import url("/styles/footer.css");
+@import url("/styles/details.css");
+@import url("/styles/language-switcher.css");
+@import url("/styles/blog-post.css");
+
 :root {
     --background-color: rgb(31,29,29);
+    --secondary-background-color: rgb(43, 40, 40);
+    --tertiary-background-color: rgb(53,41,41);
+    --border-color: rgb(70, 65, 65);
     --text-color: rgb(230,222,222);
+    --header-link-size: 38px;
+    --language-switcher-link-size: 24px;
 }
+
 @font-face {
     font-family: 'Rethink Sans';
     src: url('/rethink.ttf');
+    font-display: swap;
 }
 
 

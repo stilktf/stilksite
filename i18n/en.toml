@@ -1,0 +1,12 @@
+[posts]
+    other = "Posts"
+[translations]
+    other = "Article in other languages"
+[readmore]
+    other = "Read more →"
+[language-switcher-text]
+    other = "Language"
+[footer-copyright]
+    other = "Copyright {{ .Date.Format \"2006\" }} stilk.tf owner. Made with <a href=\"https://gohugo.io\" class=\"hugo-link\">Hugo</a>."
+[footer-license]
+    other = "Unless noted otherwise, all content on this site is licensed under <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">CC BY-NC-SA 4.0</a>."

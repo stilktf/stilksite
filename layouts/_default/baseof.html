@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}">
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/stilk.js"></script>
         <title>{{ block "title" . }}
             {{.Site.Title}}
         {{ end }}
