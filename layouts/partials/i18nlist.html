@@ -2,7 +2,7 @@
 <details>
     <summary>{{ i18n "translations" }}</summary>
       {{ range .Translations }}
-        <a href="{{ .RelPermalink }}">{{ .Lang }}: {{ .LinkTitle }}{{ if .IsPage }} ({{ i18n "wordCount" . }}){{ end }}</a>
+        <a href="{{ .RelPermalink }}">{{ .Language.Params.Flag }} {{ .Language.LanguageName }}: {{ .LinkTitle }}</a>
       {{ end }}
 </details>
 {{ end }}
