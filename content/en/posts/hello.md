@@ -1,5 +1,6 @@
 ---
 title: "Hello World!"
+description: "My first blog post"
 date: 2024-01-04T19:20:50+01:00
 draft: false
 ---

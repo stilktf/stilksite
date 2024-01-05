@@ -1,5 +1,6 @@
 ---
 title: "Hallo, verden!"
+description: "Min første artikkel"
 date: 2024-01-04T19:20:50+01:00
 draft: false
 ---

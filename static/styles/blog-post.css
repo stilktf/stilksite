@@ -11,11 +11,17 @@
     margin-bottom: 2px;
 }
 
-.blog-post-metadata {
+.blog-post > p {
     margin-top: 6px;
     margin-bottom: 0;
 }
 
 .blog-post:hover {
     background-color: var(--tertiary-background-color);
+}
+
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }

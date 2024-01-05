@@ -14,7 +14,7 @@ Index - {{.Site.Title}}
       {{ .Content }}
     </div>
     <br>
-    <div>
+    <div class="blog-list">
       {{ range first 10 (where .Site.Pages "Section" "posts") }}
         {{ range .Pages}}
           {{ partial "blogpost.html" .}}
