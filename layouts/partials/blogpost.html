@@ -1,12 +1,14 @@
 <a href="{{ .RelPermalink }}" class="blog-post">
+    {{ if .Date }}
     {{ $date := .Date.Format "Mon, Jan 2, 2006 @ 15.04" }}
     {{.Scratch.Set "date" $date}}
+    {{end}}
     {{.Scratch.Set "author" .Params.Author}}
     {{.Scratch.Set "readingTime" .ReadingTime}}
     {{.Scratch.Set "wordCount" .WordCount}}
     {{.Scratch.Set "readingTime" .ReadingTime}}
     <h3>{{ .Title | markdownify }}</h3>
-    <p class="blog-post-metadata">{{.Scratch.Get "date"}}{{if .Scratch.Get "author"}} • Written by {{.Scratch.Get
+    <p class="blog-post-metadata">{{if .Date}}{{.Scratch.Get "date"}}{{end}}{{if .Scratch.Get "author"}} • Written by {{.Scratch.Get
         "author"}}{{end}}{{if .Scratch.Get "readingTime"}} • {{.Scratch.Get "readingTime"}} min read{{end}}{{ if
         .Scratch.Get "wordCount"}} ({{.Scratch.Get "wordCount"}} words){{end}}</p>
     {{ if .Description }}<p>{{ .Description | markdownify }}</p>{{end}}

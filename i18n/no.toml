@@ -7,6 +7,6 @@
 [language-switcher-text]
     other = "Språk"
 [footer-copyright]
-    other = "Opphavsrett stilk.tfs nettsjef {{ .Date.Format \"2006\" }}. Laget med <a href=\"https://gohugo.io\" class=\"hugo-link\">Hugo</a>."
+    other = "Opphavsrett stilk.tfs nettsjef 2023-nå. Laget med <a href=\"https://gohugo.io\" class=\"hugo-link\">Hugo</a>."
 [footer-license]
     other = "Med mindre annet er angitt, er alt innhold på denne nettsiden lisensiert under <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">CC BY-NC-SA 4.0</a>."
