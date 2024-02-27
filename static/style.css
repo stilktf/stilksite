@@ -3,6 +3,7 @@
 @import url("/styles/details.css");
 @import url("/styles/language-switcher.css");
 @import url("/styles/blog-post.css");
+@import url("/styles/img.css");
 
 :root {
     --background-color: rgb(31,29,29);

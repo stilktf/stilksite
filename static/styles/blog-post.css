@@ -25,3 +25,9 @@
     flex-direction: column;
     gap: 8px;
 }
+
+pre > code {
+    background-color: var(--secondary-background-color);
+    padding: 0.5rem;
+    border-radius: 8px;
+}
